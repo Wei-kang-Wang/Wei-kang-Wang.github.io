@@ -143,6 +143,42 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="becos_stop()" onmouseover="becos_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='becos_image'>
+                  <img src='images/becos_after.png' width="160"></div>
+                <img src='images/becos_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function becos_start() {
+                  document.getElementById('becos_image').style.opacity = "1";
+                }
+
+                function becos_stop() {
+                  document.getElementById('becos_image').style.opacity = "0";
+                }
+                becos_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2411.03511">
+                <papertitle>Beyond Complete Shapes: A Quantitative Evaluation of 3D Shape Matching Algorithms</papertitle>
+              </a>
+              <br>
+              Viktoria Ehm, Nafie El Amrani, Yizheng Xie, Lennart Bastian, Maolin Gao, <strong>Weikang Wang</strong>, Lu Sang, Dongliang Cao, Zorah Lähner, Daniel Cremers, Florian Bernard,
+              <br>
+              <em>Accepted at Symposium on Geometry Processing (SGP) </em>, 2025  
+              <br>
+              <p><a href="https://becos-authors.github.io/BeCoS/">[page]</a>
+              </p>
+              <p></p>
+              <p>
+                A generic and flexible framework for the procedural generation of challenging partial shape matching scenarios. 
+              </p>
+            </td>
+          </tr> 
+
 
           <tr onmouseout="unsuper_3d_infer_stop()" onmouseover="unsuper_3d_infer_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
