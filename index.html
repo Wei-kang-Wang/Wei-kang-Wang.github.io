@@ -146,6 +146,45 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <tr onmouseout="chi_stop()" onmouseover="chi_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='chi_image'>
+                  <img src='images/chi.png' width="160"></div>
+                <img src='images/chi.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function chi_start() {
+                  document.getElementById('chi_image').style.opacity = "1";
+                }
+
+                function chi_stop() {
+                  document.getElementById('chi_image').style.opacity = "0";
+                }
+                chi_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/xxxx.xxxxx">
+                <papertitle>&#967;: Symmetry Understanding of 3D Shapes via Chirality Disentanglement</papertitle>
+              </a>
+              <br>
+              <strong>Weikang Wang<sup>&#42;</sup></strong>, Tobias Weißberg<sup>&#42;</sup>, Nafie El Amrani, Florian Bernard,
+              <br>
+              <em>Accepted by The International Conference of Computer Vision (ICCV) </em>, 2025  
+              <br>
+              <p><a href="https://wei-kang-wang.github.io/chirality/">[page]</a>
+                <a href="https://arxiv.org/abs/xxxx.xxxxx">[paper]</a>
+              </p>
+              <p></p>
+              <p>
+                An unsupervised method to extract chirality (left/right) information from vertex-based 3D shape features. 
+              </p>
+            </td>
+          </tr>
+
+
           <tr onmouseout="becos_stop()" onmouseover="becos_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -171,7 +210,7 @@
               <br>
               Viktoria Ehm, Nafie El Amrani, Yizheng Xie, Lennart Bastian, Maolin Gao, <strong>Weikang Wang</strong>, Lu Sang, Dongliang Cao, Zorah Lähner, Daniel Cremers, Florian Bernard,
               <br>
-              <em>Accepted at Symposium on Geometry Processing (SGP) </em>, 2025  
+              <em>Accepted by Symposium on Geometry Processing (SGP) </em>, 2025  
               <br>
               <p><a href="https://nafieamrani.github.io/BeCoS/">[page]</a>
                 <a href="https://arxiv.org/abs/2411.03511">[paper]</a>
@@ -247,8 +286,8 @@
                 <papertitle>Learning from Macro-expressions: A Micro-expression Recognition Framework</papertitle>
               </a>
               <br>
-              Xia, B.,
-              <strong>Wang, W. K.</strong>,
+              Xia, B.<sup>&#42;</sup>,
+              <strong>Wang, W. K.<sup>&#42;</sup></strong>,
               <a href="http://staff.ustc.edu.cn/~sfwang/">Wang, S. F.</a>,
               <a href="http://staff.ustc.edu.cn/~cheneh/">Chen, E. H.</a>,
               <br>
