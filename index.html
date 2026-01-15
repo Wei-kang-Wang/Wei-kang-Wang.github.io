@@ -92,13 +92,19 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Activities</heading>
               <p>
+                <li><b>01/2026:</b> Reviewer of CVPR 2026.
+              </p>
+              <p>
+                <li><b>02/2025-12/2025:</b> Supervisor of bachelor thesis <strong>Learning skeletal representations to enhance 3D reconstruction</strong> by Linus Remy.
+              </p>
+              <p>
                 <li><b>04/2025-09/2025:</b> Teaching Assistant of Course Discrete Models for Visual Computing (MA-INF 2225) (6 CP).
               </p>
                <p>
                 <li><b>05/2025:</b> Reviewer of NeurIPS 2025.
               </p>
               <p>
-                <li><b>03/2025:</b> Supervisor of bachelor thesis <strong>An analysis of image alignment methods for image collections with large pose variation</strong> by Al-Baraa Saeed Saeed Mohammed.
+                <li><b>04/2025-03/2025:</b> Supervisor of bachelor thesis <strong>An analysis of image alignment methods for image collections with large pose variation</strong> by Al-Baraa Saeed Saeed Mohammed.
               </p>
                <p>
                 <li><b>03/2025:</b> Reviewer of ICCV 2025.
@@ -142,12 +148,51 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                Most of my researches lie in 3D reconstruction, geometry-based and graph-based 3D inference and 3D-related generative models.
+                Most of my researches lie in symmetry-aware 2D/3D object structure understanding.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <tr onmouseout="sym_stop()" onmouseover="sym_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sym_image'>
+                  <img src='images/sym.png' width="160"></div>
+                <img src='images/sym.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function sym_start() {
+                  document.getElementById('sym_image').style.opacity = "1";
+                }
+
+                function sym_stop() {
+                  document.getElementById('sym_image').style.opacity = "0";
+                }
+                sym_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/xxxx.xxxxx">
+                <papertitle>&#967;: Symmetry Informative and Agnostic Feature Disentanglement for 3D Shapes</papertitle>
+              </a>
+              <br>
+              Tobias Weißberg, <strong>Weikang Wang</strong>, Paul Roetzer, Nafie El Amrani, Florian Bernard,
+              <br>
+              <em>Accepted by The International Conference on 3D Vision (3DV) </em>, 2026  
+              <br>
+              <p><a href="https://tweissberg.github.io/chirality/">[page]</a>
+                <a href="https://arxiv.org/abs/xxxx.xxxxx">[paper]</a>
+              </p>
+              <p></p>
+              <p>
+                An unsupervised method to disentangle symmetry agnostic and symmetry informative shape descriptors. 
+              </p>
+            </td>
+          </tr>
+          
 
 
           <tr onmouseout="chi_stop()" onmouseover="chi_start()">
@@ -169,7 +214,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/xxxx.xxxxx">
+              <a href="https://arxiv.org/pdf/2508.05505">
                 <papertitle>&#967;: Symmetry Understanding of 3D Shapes via Chirality Disentanglement</papertitle>
               </a>
               <br>
