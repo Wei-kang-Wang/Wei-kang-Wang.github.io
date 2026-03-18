@@ -369,10 +369,10 @@ export class Renderer {
       <div class="education-item">
         <div class="edu-details">
           <div class="edu-degree">Teaching Assistant</div>
-          <div class="edu-institution">${committees.map((item, index) => {
+          <div class="edu-institution">${lectures.map((item, index) => {
             const years = this.formatYears(item.years);
             const note = item.note ? ' (' + item.note + ')' : '';
-            const sep = index < committees.length - 1 ? ', ' : '';
+            const sep = index < lectures.length - 1 ? ', ' : '';
             return `${item.conference || 'Unknown'}${years ? ' (<span class="edu-period">' + years + '</span>)' : ''}${note}${sep}`;
           }).join('')}</div>
         </div>
