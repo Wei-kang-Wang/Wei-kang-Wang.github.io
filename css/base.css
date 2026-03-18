@@ -693,5 +693,5 @@ a:focus-visible {
 
 
 #"News" li {
-  left-style: none;
+  margin-left: 24px;
 }
