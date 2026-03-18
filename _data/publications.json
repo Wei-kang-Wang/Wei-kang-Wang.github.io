@@ -61,6 +61,8 @@
       "id": "20_ACMMM_Micro",
       "title": "Learning from Macro-expression: a Micro-expression Recognition Framework",
       "authors": ["Bin", "Weikang", "Shangfei", "Enhong"],
+      "equal_contribution": ["Bin", "Weikang"],
+      "note": "(* equal contribution)",
       "resources": ["paper"],
       "image_extensions": [".png"],
       "links": {
