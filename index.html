@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REN Jing</title>
+    
+    <!-- Favicon - from root favicon_io folder -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v4-shims.min.css">
+    
+    <!-- Academicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <!-- CSS Files - from src/css (same directory as index.html) -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#2880e3">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="REN Jing">
+    <meta property="og:description" content="Senior Researcher at Interactive Geometry Lab, ETH Zurich">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ren-jing.com">
+    <meta property="og:image" content="/images/profile_from_abdalla_gbn.jpg">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#home" class="logo" aria-label="Home">
+                    <span class="logo-text">Jing Ren</span>
+                </a>
+                
+                <div class="navbar-menu" id="navbarMenu">
+                    <ul class="nav-list" role="menubar">
+                        <li role="none">
+                            <a href="#about" class="nav-link" role="menuitem">About</a>
+                        </li>
+                        <li role="none">
+                            <a href="#publications" class="nav-link" role="menuitem">Publications</a>
+                        </li>
+                        <li role="none">
+                            <a href="#services" class="nav-link" role="menuitem">Academic Services</a>
+                        </li>
+                        <li role="none">
+                            <a href="#experience" class="nav-link" role="menuitem">Research Experience</a>
+                        </li>
+                        <li role="none">
+                            <a href="#education" class="nav-link" role="menuitem">Education</a>
+                        </li>
+                        <li role="none">
+                            <a href="/files/cv.pdf" class="nav-link" role="menuitem" target="_blank">
+                                <i class="fas fa-file-pdf" aria-hidden="true"></i> CV
+                            </a>
+                        </li>
+                    </ul>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarMenu">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="profile-section">
+                <!-- Left column: Photo and info -->
+                <div class="profile-image">
+                    <img src="/images/profile_from_abdalla_gbn.jpg" 
+                         alt="Jing Ren" 
+                         class="profile-photo"
+                         loading="lazy"
+                         width="160"
+                         height="160">
+                    
+                    <div class="profile-info">
+                        
+                        <div class="profile-actions">
+                            <!-- Only Google Scholar, GitHub, and Contact buttons -->
+                             <a href="https://scholar.google.com/citations?user=qkadBVcAAAAJ&hl=en" class="btn btn-secondary" target="_blank">
+                                <i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar
+                            </a>
+                            <a href="https://github.com/llorz" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                            </a>
+                            <a href="mailto:jing.ren@inf.ethz.ch" class="btn btn-secondary">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right column: Text and bio -->
+                <div class="profile-text">
+                    <h1 class="profile-name" id="about-heading">Jing Ren
+                        <span class="profile-title">Senior Researcher, ETH Zurich</span>
+                    </h1>
+                    
+                    <div class="profile-bio">
+                        <p>I am currently a senior researcher in the <a href="https://igl.ethz.ch/" class="institution-link">Interactive Geometry Lab</a>, <a href="https://ethz.ch/en.html" class="institution-link">ETH Zurich</a>, advised by <a href="https://igl.ethz.ch/people/sorkine/" class="collaborator-link" data-collaborator="Olga">Prof. Olga Sorkine-Hornung</a>.
+                        I obtained my Ph.D. degree from the <a href="https://vcc.kaust.edu.sa/" class="institution-link">Visual Computing Center</a>, <a href="https://www.kaust.edu.sa/en" class="institution-link">KAUST</a>, advised by <a href="http://peterwonka.net" class="collaborator-link" data-collaborator="Peter">Prof. Peter Wonka</a> and <a href="http://www.lix.polytechnique.fr/~maks/" class="collaborator-link" data-collaborator="Maks">Prof. Maks Ovsjanikov</a>.
+                        Before that, I obtained the M.Sc. degree from the <a href="https://www.ox.ac.uk/" class="institution-link">University of Oxford</a>, UK, and the B.Sc. degree from <a href="https://www.zju.edu.cn/english/" class="institution-link">Zhejiang University</a>, China.
+                        My research is mainly related to shape analysis, geometry processing and digital fabrication. I am also interested in computer graphics and computer vision in general.</p>
+
+                        <p class="note-paragraph">
+                            <strong class="note-label">Note:</strong> I will be traveling from <b>mid-February to mid-May 2026</b>. During this period, due to limited internet access and availability, <b>I will be unable to accept new review invitations and may be slow in responding to emails</b>. Starting from mid-May 2026, I will be joining the Université de Montréal as an Assistant Professor.
+                            If you are interested in pursuing a Master or PhD in geometry processing and/or digital fabrication, please feel free to contact me via email with your academic CV (please forgive my deplayed reply during this period).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section" aria-labelledby="publications-heading">
+            <h2 class="section-title" id="publications-heading">Publications</h2>
+
+            <!-- Publications Container -->
+            <div class="publications-container" id="publicationsContainer">
+                <!-- Dynamically loaded -->
+                <div class="loading">Loading publications...</div>
+            </div>
+        </section>
+
+
+
+        <!-- Academic Services Section -->
+        <section id="services" class="section" aria-labelledby="services-heading">
+            <h2 class="section-title" id="services-heading">Academic Services</h2>
+            <div class="services-grid" id="servicesContainer">
+                <!-- Content will be loaded from services.json -->
+                <div class="loading">Loading academic services...</div>
+            </div>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="experience" class="section" aria-labelledby="experience-heading">
+            <h2 class="section-title" id="experience-heading">Research Experience</h2>
+            <div class="experience-grid" id="experienceContainer">
+                <!-- Research experience items will be loaded from JSON -->
+                <div class="loading">Loading research experience...</div>
+            </div>
+        </section>
+
+        <!-- Education Section (NOW AT THE BOTTOM) -->
+        <section id="education" class="section" aria-labelledby="education-heading">
+            <h2 class="section-title" id="education-heading">Education</h2>
+            <div class="education-grid" id="educationContainer">
+                <!-- Content will be rendered by JavaScript -->
+                <div class="loading">Loading education...</div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Jing Ren
+                </div>
+                <div class="footer-links">
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="https://scholar.google.com/citations?user=qkadBVcAAAAJ&hl=en" 
+                           class="social-link" 
+                           title="Google Scholar" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Google Scholar profile">
+                            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/llorz" 
+                           class="social-link" 
+                           title="GitHub" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://arxiv.org/a/ren_j_2.html" 
+                           class="social-link" 
+                           title="arXiv" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="arXiv publications">
+                            <i class="ai ai-arxiv" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://orcid.org/0000-0003-3114-3517" 
+                           class="social-link" 
+                           title="ORCID" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="ORCID profile">
+                            <i class="ai ai-orcid" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Publication Template (for dynamic rendering) -->
+    <template id="publicationTemplate">
+        <article class="publication" data-year="">
+            <div class="publication-content">
+                <h3 class="publication-title"></h3>
+                
+                <div class="publication-authors"></div>
+                
+                <div class="publication-venue">
+                    <span class="venue-name"></span>, 
+                    <span class="venue-year"></span>
+                    <span class="publication-awards-inline"></span>
+                    <span class="publication-note"></span>
+                </div>
+                
+                <div class="publication-links"></div>
+            </div>
+            
+            <div class="publication-media">
+                <!-- Dynamically added images -->
+            </div>
+        </article>
+    </template>
+
+    <!-- JavaScript Modules -->
+    <script type="module">
+        // Import main application
+        import { initWebsite } from '/js/main.js';
+        
+        // Initialize website when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initWebsite);
+        } else {
+            initWebsite();
+        }
+        
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Fallback for browsers without JavaScript -->
+    <noscript>
+        <style>
+            .navbar-menu { display: block !important; }
+            .nav-toggle { display: none !important; }
+            .loading { display: none !important; }
+            [data-institution]::before {
+                content: "[" attr(data-institution) "]";
+                color: #666;
+            }
+        </style>
+        <div class="noscript-warning">
+            <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser.</p>
+        </div>
+    </noscript>
+</body>
+</html>
