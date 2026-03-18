@@ -323,8 +323,7 @@ export class Renderer {
   //   `;
   // }
 
-  
-  sortServiceItems(items) {
+    sortServiceItems(items) {
     if (!items || !Array.isArray(items)) return [];
     
     return [...items].sort((a, b) => {
@@ -365,33 +364,31 @@ export class Renderer {
  
     let html = '';
  
-    // Teaching Assistant — same style as education items
+    // Teaching Assistant
     html += `
       <div class="education-item">
         <div class="edu-details">
           <div class="edu-degree">Teaching Assistant</div>
-          <div class="edu-period-details">
-            ${committees.map(item => {
-              const years = this.formatYears(item.years);
-              return `<div class="edu-period">${item.conference || 'Unknown'}${years ? ' ' + years : ''}${item.note ? ' (' + item.note + ')' : ''}</div>`;
-            }).join('')}
-          </div>
+          <div class="edu-institution">${committees.map((item, index) => {
+            const years = this.formatYears(item.years);
+            const note = item.note ? ' (' + item.note + ')' : '';
+            const sep = index < committees.length - 1 ? ', ' : '';
+            return `(${item.conference || 'Unknown'}${years ? ' ' + years : ''}${note})${sep}`;
+          }).join('')}</div>
         </div>
       </div>
     `;
  
-    // Reviewer — inline comma-separated, same style
+    // Reviewer — inline comma-separated
     html += `
       <div class="education-item">
         <div class="edu-details">
           <div class="edu-degree">Reviewer</div>
-          <div class="edu-period-details">
-            <div class="edu-period">${reviewer.map((item, index) => {
-              const years = this.formatYears(item.years);
-              const sep = index < reviewer.length - 1 ? ', ' : '';
-              return `${item.conference || 'Unknown'}${years ? ' ' + years : ''}${sep}`;
-            }).join('')}</div>
-          </div>
+          <div class="edu-institution">${reviewer.map((item, index) => {
+            const years = this.formatYears(item.years);
+            const sep = index < reviewer.length - 1 ? ', ' : '';
+            return `(${item.conference || 'Unknown'}${years ? ' ' + years : ''})${sep}`;
+          }).join('')}</div>
         </div>
       </div>
     `;
