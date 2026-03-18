@@ -322,6 +322,7 @@ export class Renderer {
   //     </div>
   //   `;
   // }
+  
   sortServiceItems(items) {
     if (!items || !Array.isArray(items)) return [];
     
@@ -361,9 +362,9 @@ export class Renderer {
     const committees = this.sortServiceItems(this.services.committees || []);
     const reviewer = this.sortServiceItems(this.services.reviewer || []);
  
-    let html = '<div class="education-grid">';
+    let html = '';
  
-    // Teaching Assistant — like a degree entry in Education
+    // Teaching Assistant
     html += `
       <div class="education-item">
         <div class="edu-details">
@@ -372,13 +373,13 @@ export class Renderer {
             const years = this.formatYears(item.years);
             const note = item.note ? ' (' + item.note + ')' : '';
             const sep = index < committees.length - 1 ? ', ' : '';
-            return `(${item.conference || 'Unknown'}${years ? ' <span class="edu-period">' + years + '</span>' : ''}${note})${sep}`;
+            return `${item.conference || 'Unknown'}${years ? ' (<span class="edu-period">' + years + '</span>)' : ''}${note}${sep}`;
           }).join('')}</div>
         </div>
       </div>
     `;
  
-    // Reviewer — inline comma-separated
+    // Reviewer
     html += `
       <div class="education-item">
         <div class="edu-details">
@@ -386,13 +387,12 @@ export class Renderer {
           <div class="edu-institution">${reviewer.map((item, index) => {
             const years = this.formatYears(item.years);
             const sep = index < reviewer.length - 1 ? ', ' : '';
-            return `(${item.conference || 'Unknown'}${years ? ' <span class="edu-period">' + years + '</span>' : ''})${sep}`;
+            return `${item.conference || 'Unknown'}${years ? ' (<span class="edu-period">' + years + '</span>)' : ''}${sep}`;
           }).join('')}</div>
         </div>
       </div>
     `;
  
-    html += '</div>';
     return html;
   }
 
