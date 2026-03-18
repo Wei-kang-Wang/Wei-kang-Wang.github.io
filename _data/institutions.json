@@ -45,7 +45,33 @@
       "country": "China",
       "type": "university"
     },
-    
 
+    "Simon-Fraser-University": {
+      "name": "Simon Fraser University",
+      "abbr": "Simon-Fraser-University",
+      "url": "https://www.sfu.ca/",
+      "logo": "images/ustc.jpg",
+      "country": "Canada",
+      "type": "university"
+    },
+
+    "Imperial-College-London": {
+      "name": "Imperial College London",
+      "abbr": "Imperial-College-London",
+      "url": "https://www.imperial.ac.uk/",
+      "logo": "images/ustc.jpg",
+      "country": "UK",
+      "type": "university"
+    },
+
+    "Troyes": {
+      "name": "University of Technology of Troyes",
+      "abbr": "Troyes",
+      "url": "https://www.utt.fr/study-at-utt",
+      "logo": "images/ustc.jpg",
+      "country": "France",
+      "type": "university"
+    }
+    
   }
 }
