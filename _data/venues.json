@@ -16,6 +16,8 @@
     "CVPR": "IEEE Conference on Computer Vision and Pattern Recognition",
     "ANTHRO": "L'Anthropologie",
     "TVCG": "IEEE Transactions on Visualization and Computer Graphics",
-    "THESIS": "PhD Thesis"
+    "THESIS": "PhD Thesis",
+    "ACMMM": "ACM Multimedia",
+    "IEEE DSP": "IEEE International Conference on Digital Signal Processing"
   }
 }
