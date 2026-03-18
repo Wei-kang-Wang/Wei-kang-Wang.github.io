@@ -693,6 +693,19 @@ a:focus-visible {
 
 
 #News li {
-  margin-left: 4px;
+  position: relative;
+  padding-left: 16px;
+  margin-left: 8px;
   list-style: none;
+}
+
+#News li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: var(--spacing-lg);
+  bottom: var(--spacing-lg);
+  width: var(--border-thickness-xs);
+  background-color: var(--color-line);
+  border-radius: var(--border-radius-sm);
 }
