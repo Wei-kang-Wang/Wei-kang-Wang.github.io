@@ -46,6 +46,15 @@
       "type": "university"
     },
 
+    "USTC-AC": {
+      "name": "USTC-AC Research Group",
+      "abbr": "USTC-AC",
+      "url": "https://ustc-ac.github.io/",
+      "logo": "",
+      "parent": "USTC",
+      "type": "lab"
+    },
+
     "Simon-Fraser-University": {
       "name": "Simon Fraser University",
       "abbr": "Simon-Fraser-University",
