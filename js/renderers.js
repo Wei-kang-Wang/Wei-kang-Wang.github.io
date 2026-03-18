@@ -326,25 +326,14 @@ export class Renderer {
   renderEducation() {
     const educationData = [
       {
-        degree: 'Ph.D. in Computer Science',
-        institution: 'KAUST, Visual Computing Center',
-        period: '2015 - 2021',
-        thesis: 'Shape Matching and Map Space Exploration via Functional Maps',
-        thesisLink: 'https://repository.kaust.edu.sa/handle/10754/670353',
-        supervisors: [
-          { name: 'Peter', collaborator: 'Peter' },
-          { name: 'Maks', collaborator: 'Maks' }
-        ]
+        degree: 'M.Sc. in Electrical Engineering',
+        institution: 'Columbia University',
+        period: '2017 - 2019'
       },
       {
-        degree: 'M.Sc. in Financial Mathematics',
-        institution: 'University of Oxford',
-        period: '2014 - 2015'
-      },
-      {
-        degree: 'B.Sc. in Mathematics and Applied Mathematics',
-        institution: 'Zhejiang University',
-        period: '2010 - 2014'
+        degree: 'M. Eng. in Automation (With Honors)',
+        institution: 'Beihang University',
+        period: '2013 - 2017'
       }
     ];
     
