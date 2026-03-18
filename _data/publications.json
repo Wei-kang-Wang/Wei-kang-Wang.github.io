@@ -20,7 +20,7 @@
       "equal_contribution": ["Weikang", "Tobias"],
       "note": "(* equal contribution)",
       "resources": ["paper", "poster", "slides"],
-      "image_extensions": [".jpg"],
+      "image_extensions": [".png"],
       "links": {
         "project": "https://wei-kang-wang.github.io/chirality/",
         "arxiv": "https://arxiv.org/abs/2508.05505",
