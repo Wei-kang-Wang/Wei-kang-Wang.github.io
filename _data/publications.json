@@ -5,7 +5,7 @@
       "title": "Symmetry Informative and Agnostic Feature Disentanglement for 3D Shapes",
       "authors": ["Tobias", "Weikang", "Nafie", "Paul", "Florian"],
       "resources": ["paper", "poster"],
-      "image_extensions": [".jpg"],
+      "image_extensions": [".png"],
       "links": {
         "project": "https://tweissberg.github.io/chirality/",
         "arxiv": "https://arxiv.org/abs/2601.14804",
@@ -36,7 +36,7 @@
       "equal_contribution": ["Viktoria", "Nafie"],
       "note": "(* equal contribution)",
       "resources": ["paper"],
-      "image_extensions": [".jpg"],
+      "image_extensions": [".png"],
       "links": {
         "project": "https://nafieamrani.github.io/BeCoS/",
         "arxiv": "https://arxiv.org/abs/2411.03511",
@@ -46,10 +46,10 @@
 
     {
       "id": "24_CVPR_Unsup3D",
-      "title": "Symmetry Informative and Agnostic Feature Disentanglement for 3D Shapes",
-      "authors": ["Tobias", "Weikang", "Nafie", "Paul", "Florian"],
+      "title": "Unsupervised 3D Structure Inference from Category-Specific Image Collections",
+      "authors": ["Weikang", "Dongliang", "Florian"],
       "resources": ["paper", "poster", "slides"],
-      "image_extensions": [".jpg"],
+      "image_extensions": [".png"],
       "links": {
         "project": "https://wei-kang-wang.github.io/unsuper3Dstructure/",
         "PDF": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_Unsupervised_3D_Structure_Inference_from_Category-Specific_Image_Collections_CVPR_2024_paper.pdf",
@@ -62,7 +62,7 @@
       "title": "Learning from Macro-expression: a Micro-expression Recognition Framework",
       "authors": ["Bin", "Weikang", "Shangfei", "Enhong"],
       "resources": ["paper"],
-      "image_extensions": [".jpg"],
+      "image_extensions": [".png"],
       "links": {
         "PDF": "https://dl.acm.org/doi/10.1145/3394171.3413774",
         "code": "https://github.com/Wei-kang-Wang/Micro-Expression"
@@ -70,11 +70,11 @@
     },
 
     {
-      "id": "16_DSP_UAV",
+      "id": "16_IEEE DSP_UAV",
       "title": "Cooperative target searching and tracking via UCT with probability distribution mode",
       "authors": ["Ruoxi", "Tian", "Haotian", "Qianhong", "Weikang", "Hichem"],
       "resources": ["paper"],
-      "image_extensions": [".jpg"],
+      "image_extensions": [".png"],
       "links": {
         "PDF": "https://ieeexplore.ieee.org/document/7868620/",
         "code": "https://github.com/RuoxiQin/Unmanned-Aerial-Vehicle-Tracking"
