@@ -43,7 +43,7 @@ class DataLoader {
 
       let researchExperience;
       try {
-        const researchData = await this.fetchJSON('/_data/research-experience.json');
+        const researchData = await this.fetchJSON('./_data/research-experience.json');
         researchExperience = researchData.research_experience || [];
       } catch (error) {
         console.warn('Research experience file not found or invalid, using empty array');
