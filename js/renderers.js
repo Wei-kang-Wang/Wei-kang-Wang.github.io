@@ -9,7 +9,7 @@ export class Renderer {
     this.publications = data.publications || [];
     this.collaborators = data.collaborators || {};
     this.venues = data.venues || {};
-    this.services = data.services || { committees: [], reviewer: [] };
+    this.services = data.services || { teaching_assistant: [], reviewer: [] };
   }
 
   // ===== PUBLICATION RENDERING =====
@@ -271,20 +271,20 @@ export class Renderer {
   }
 
   renderAcademicServices() {
-    const committees = this.sortServiceItems(this.services.committees || []);
+    const teaching_assistant = this.sortServiceItems(this.services.teaching_assistant || []);
     const reviewer = this.sortServiceItems(this.services.reviewer || []);
     const [reviewerCol1, reviewerCol2] = this.splitIntoTwoColumns(reviewer);
 
     return `
       <div class="services-grid">
-        <!-- Program Committees Column -->
+        <!-- Program teaching_assistant Column -->
         <div class="service-column">
           <div class="service-category">
             <h3>Teaching Assistant</h3>
             <div class="service-items">
-              ${committees.map(item => `
+              ${teaching_assistant.map(item => `
                 <div class="service-item">
-                  <span class="service-conference">${item.conference || 'Unknown'}</span>
+                  <span class="service-lectures">${item.lectures || 'Unknown'}</span>
                   <span class="service-years">${this.formatYears(item.years)}</span>
                   ${item.note ? `<span class="service-note">(${item.note})</span>` : ''}
                 </div>
