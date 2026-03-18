@@ -124,6 +124,35 @@
       "title": "Prof.",
       "url": "http://h.snoussi.free.fr/",
       "institution": "Troyes"
-    }
+    },
+    "Baochang": {
+      "full_name": "Baochang Zhang",
+      "title": "Prof.",
+      "url": "https://scholar.google.com.hk/citations?user=ImJz6MsAAAAJ&hl=en",
+      "institution": "BUAA"
+    },
+    "Borui": {
+      "full_name": "Borui Yang",
+      "institution": "BUAA"
+    },
+    "Changlong":{
+      "full_name": "Changlong Wang",
+      "institution":"Tsinghua"
+    },
+    "WenNi":{
+      "full_name": "Wen Ni",
+      "title": "Prof.",
+      "institution":"University of Science and Technology Beijing",
+      "url": "https://faculty.ustb.edu.cn/WenNi/en/index.htm"
+    },
+    "Siqi":{
+      "full_name": "Siqi Zhang",
+      "url": "https://orcid.org/0000-0001-8533-2749",
+      "institution": "University of Science and Technology Beijing"
+    },
+    "Guosheng":{
+    "full_name": "Guosheng Gai",
+    "url": "https://www.mse.tsinghua.edu.cn/szqk/txry.htm",
+    "institution": "Tsinghua University"}
   }
 }
