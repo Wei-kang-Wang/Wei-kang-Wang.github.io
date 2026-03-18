@@ -234,6 +234,95 @@ export class Renderer {
   }
 
   // ===== SERVICES RENDERING =====
+
+  // sortServiceItems(items) {
+  //   if (!items || !Array.isArray(items)) return [];
+    
+  //   return [...items].sort((a, b) => {
+  //     const getLargestYear = (item) => {
+  //       if (!item.years || !Array.isArray(item.years) || item.years.length === 0) return 0;
+  //       const years = item.years.map(y => parseInt(y)).filter(y => !isNaN(y));
+  //       return years.length > 0 ? Math.max(...years) : 0;
+  //     };
+      
+  //     const yearA = getLargestYear(a);
+  //     const yearB = getLargestYear(b);
+  //     return yearB - yearA;
+  //   });
+  // }
+
+  // splitIntoTwoColumns(items) {
+  //   if (!items || !Array.isArray(items)) return [[], []];
+  //   const half = Math.ceil(items.length / 2);
+  //   return [items.slice(0, half), items.slice(half)];
+  // }
+
+  // formatYears(years) {
+  //   if (!years || !Array.isArray(years) || years.length === 0) return '';
+    
+  //   const parsedYears = years
+  //     .map(y => parseInt(y))
+  //     .filter(y => !isNaN(y));
+      
+  //   if (parsedYears.length === 0) return '';
+    
+  //   const sortedYears = [...parsedYears].sort((a, b) => b - a);
+  //   return sortedYears.map(year => `'${year.toString().slice(2)}`).join(', ');
+  // }
+
+  // renderAcademicServices() {
+  //   const teaching_assistant = this.sortServiceItems(this.services.teaching_assistant || []);
+  //   const reviewer = this.sortServiceItems(this.services.reviewer || []);
+  //   const [reviewerCol1, reviewerCol2] = this.splitIntoTwoColumns(reviewer);
+
+  //   return `
+  //     <div class="services-grid">
+  //       <!-- Program teaching_assistant Column -->
+  //       <div class="service-column">
+  //         <div class="service-category">
+  //           <h3>Teaching Assistant</h3>
+  //           <div class="service-items">
+  //             ${teaching_assistant.map(item => `
+  //               <div class="service-item">
+  //                 <span class="service-lectures">${item.lectures || 'Unknown'}</span>
+  //                 <span class="service-years">${this.formatYears(item.years)}</span>
+  //                 ${item.note ? `<span class="service-note">(${item.note})</span>` : ''}
+  //               </div>
+  //             `).join('')}
+  //           </div>
+  //         </div>
+  //       </div>
+        
+  //       <!-- Reviewer Column -->
+  //       <div class="service-column">
+  //         <div class="service-category">
+  //           <h3>Reviewer</h3>
+  //           <div class="reviewer-grid">
+  //             <div class="reviewer-column">
+  //               ${reviewerCol1.map(item => `
+  //                 <div class="service-item">
+  //                   <span class="service-conference">${item.conference || 'Unknown'}</span>
+  //                   <span class="service-years">${this.formatYears(item.years)}</span>
+  //                   ${item.note ? `<span class="service-note">(${item.note})</span>` : ''}
+  //                 </div>
+  //               `).join('')}
+  //             </div>
+  //             <div class="reviewer-column">
+  //               ${reviewerCol2.map(item => `
+  //                 <div class="service-item">
+  //                   <span class="service-conference">${item.conference || 'Unknown'}</span>
+  //                   <span class="service-years">${this.formatYears(item.years)}</span>
+  //                   ${item.note ? `<span class="service-note">(${item.note})</span>` : ''}
+  //                 </div>
+  //               `).join('')}
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   `;
+  // }
+
   
   sortServiceItems(items) {
     if (!items || !Array.isArray(items)) return [];
@@ -250,13 +339,13 @@ export class Renderer {
       return yearB - yearA;
     });
   }
-
+ 
   splitIntoTwoColumns(items) {
     if (!items || !Array.isArray(items)) return [[], []];
     const half = Math.ceil(items.length / 2);
     return [items.slice(0, half), items.slice(half)];
   }
-
+ 
   formatYears(years) {
     if (!years || !Array.isArray(years) || years.length === 0) return '';
     
@@ -269,60 +358,48 @@ export class Renderer {
     const sortedYears = [...parsedYears].sort((a, b) => b - a);
     return sortedYears.map(year => `'${year.toString().slice(2)}`).join(', ');
   }
-
+ 
   renderAcademicServices() {
-    const teaching_assistant = this.sortServiceItems(this.services.teaching_assistant || []);
+    const committees = this.sortServiceItems(this.services.committees || []);
     const reviewer = this.sortServiceItems(this.services.reviewer || []);
-    const [reviewerCol1, reviewerCol2] = this.splitIntoTwoColumns(reviewer);
-
-    return `
-      <div class="services-grid">
-        <!-- Program teaching_assistant Column -->
-        <div class="service-column">
-          <div class="service-category">
-            <h3>Teaching Assistant</h3>
-            <div class="service-items">
-              ${teaching_assistant.map(item => `
-                <div class="service-item">
-                  <span class="service-lectures">${item.lectures || 'Unknown'}</span>
-                  <span class="service-years">${this.formatYears(item.years)}</span>
-                  ${item.note ? `<span class="service-note">(${item.note})</span>` : ''}
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        </div>
-        
-        <!-- Reviewer Column -->
-        <div class="service-column">
-          <div class="service-category">
-            <h3>Reviewer</h3>
-            <div class="reviewer-grid">
-              <div class="reviewer-column">
-                ${reviewerCol1.map(item => `
-                  <div class="service-item">
-                    <span class="service-conference">${item.conference || 'Unknown'}</span>
-                    <span class="service-years">${this.formatYears(item.years)}</span>
-                    ${item.note ? `<span class="service-note">(${item.note})</span>` : ''}
-                  </div>
-                `).join('')}
-              </div>
-              <div class="reviewer-column">
-                ${reviewerCol2.map(item => `
-                  <div class="service-item">
-                    <span class="service-conference">${item.conference || 'Unknown'}</span>
-                    <span class="service-years">${this.formatYears(item.years)}</span>
-                    ${item.note ? `<span class="service-note">(${item.note})</span>` : ''}
-                  </div>
-                `).join('')}
-              </div>
-            </div>
+ 
+    let html = '';
+ 
+    // Teaching Assistant — same style as education items
+    html += `
+      <div class="education-item">
+        <div class="edu-details">
+          <div class="edu-degree">Teaching Assistant</div>
+          <div class="edu-period-details">
+            ${committees.map(item => {
+              const years = this.formatYears(item.years);
+              return `<div class="edu-period">${item.conference || 'Unknown'}${years ? ' ' + years : ''}${item.note ? ' (' + item.note + ')' : ''}</div>`;
+            }).join('')}
           </div>
         </div>
       </div>
     `;
+ 
+    // Reviewer — inline comma-separated, same style
+    html += `
+      <div class="education-item">
+        <div class="edu-details">
+          <div class="edu-degree">Reviewer</div>
+          <div class="edu-period-details">
+            <div class="edu-period">${reviewer.map((item, index) => {
+              const years = this.formatYears(item.years);
+              const sep = index < reviewer.length - 1 ? ', ' : '';
+              return `${item.conference || 'Unknown'}${years ? ' ' + years : ''}${sep}`;
+            }).join('')}</div>
+          </div>
+        </div>
+      </div>
+    `;
+ 
+    return html;
   }
 
+  
   renderEducation() {
     const educationData = [
       {
