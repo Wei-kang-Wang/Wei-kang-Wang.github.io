@@ -359,27 +359,25 @@ export class Renderer {
   }
  
   renderAcademicServices() {
-    const committees = this.sortServiceItems(this.services.committees || []);
+    const teaching = this.sortServiceItems(this.services.teaching_assistant || []);
     const reviewer = this.sortServiceItems(this.services.reviewer || []);
  
     let html = '';
  
-    // Teaching Assistant
+    // Teaching Assistant — each lecture on its own line
     html += `
       <div class="education-item">
         <div class="edu-details">
           <div class="edu-degree">Teaching Assistant</div>
-          <div class="edu-institution">${lectures.map((item, index) => {
+          ${teaching.map(item => {
             const years = this.formatYears(item.years);
-            const note = item.note ? ' (' + item.note + ')' : '';
-            const sep = index < lectures.length - 1 ? ', ' : '';
-            return `${item.conference || 'Unknown'}${years ? ' (<span class="edu-period">' + years + '</span>)' : ''}${note}${sep}`;
-          }).join('')}</div>
+            return `<div class="edu-institution">${item.lectures || 'Unknown'}${years ? ' (<span class="edu-period">' + years + '</span>)' : ''}</div>`;
+          }).join('')}
         </div>
       </div>
     `;
  
-    // Reviewer
+    // Reviewer — inline comma-separated
     html += `
       <div class="education-item">
         <div class="edu-details">
