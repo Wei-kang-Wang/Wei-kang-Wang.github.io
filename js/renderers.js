@@ -280,7 +280,7 @@ export class Renderer {
         <!-- Program Committees Column -->
         <div class="service-column">
           <div class="service-category">
-            <h3>Technical Papers Committee</h3>
+            <h3>Teaching Assistant</h3>
             <div class="service-items">
               ${committees.map(item => `
                 <div class="service-item">
