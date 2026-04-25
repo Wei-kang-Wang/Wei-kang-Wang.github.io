@@ -37,6 +37,9 @@
     },
     {
       "conference": "TPAMI"
+    },
+    {
+      "conference": "ToG"
     }
   ]
 }
