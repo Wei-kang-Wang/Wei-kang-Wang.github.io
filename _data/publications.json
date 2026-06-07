@@ -1,6 +1,18 @@
 {
   "publications": [
     {
+      "id": "26_CVPR_PartialDINOV3",
+      "title": "Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach",
+      "authors": ["Viktoria", "Dongliang", "Riccardo", "Daniel_Scholz", "Weikang", "Florian", "Daniel"],
+      "resources": ["paper"],
+      "image_extensions": [".png"],
+      "links": {
+        "code": "https://github.com/vikiehm/geo-lora",
+        "PDF": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ehm_Teaching_DINOv3_About_Partial_3D_Geometry_A_Self-Supervised_Geometry-Aware_Approach_CVPR_2026_paper.pdf"
+      }
+    },
+    
+    {
       "id": "26_3DV_Symmetry",
       "title": "Symmetry Informative and Agnostic Feature Disentanglement for 3D Shapes",
       "authors": ["Tobias", "Weikang", "Nafie", "Paul", "Florian"],
