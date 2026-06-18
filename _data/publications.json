@@ -5,8 +5,9 @@
       "title": "Unsupervised Pixel-Level Semantic Left-Right Understanding of In-the-Wild Images",
       "authors": ["Weikang", "Tobias", "Florian"],
       "resources": ["paper"],
-      "image_extensions": [".png"],
+      "image_extensions": [".png"]
     },
+    
     {
       "id": "26_CVPR_PartialDINOV3",
       "title": "Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach",
